@@ -1,6 +1,6 @@
 /*
   (Started from 1.3.3)
-  FlexNav.js 1.3.5
+  FlexNav.js 1.3.6
 
   Created by Jason Weaver http://jasonweaver.name
   Released under http://unlicense.org/
@@ -120,7 +120,7 @@
       $thisNav = $btnParent.data('navEl');
       return $thisNav.toggleClass('menu-show');
     });
-    $('.touch-button').on('click', function(e) {
+    $('.touch-button').on('click touchend', function(e) {
       var $sub, $touchButton;
       $sub = $(this).parent('.item-with-ul').find('>ul');
       $touchButton = $(this).parent('.item-with-ul').find('>span.touch-button');
