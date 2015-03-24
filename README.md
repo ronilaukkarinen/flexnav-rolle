@@ -1,5 +1,7 @@
 # FlexNav jQuery Plugin
 
+This is a [flexnav](https://github.com/indyplanets/flexnav) fork by Roni Laukkarinen. I use old school jQuery with Gulp instead coffeescript or Grunt.
+
 ### A Device Agnostic Approach to Complex Site Navigation with Support for Touch and Keyboard Accessibility
 
 * * *
