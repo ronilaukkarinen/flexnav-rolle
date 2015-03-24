@@ -1,6 +1,25 @@
 # FlexNav jQuery Plugin
 
-This is a [flexnav](https://github.com/indyplanets/flexnav) fork by Roni Laukkarinen. I use old school jQuery with Gulp instead coffeescript or Grunt.
+This is was originally a [flexnav](https://github.com/indyplanets/flexnav) fork by Roni Laukkarinen (me), but since the original author has been inactive for a while I decided to detach this as a stand alone repo. Besides, there are so many differences, for instance I use old school jQuery with Gulp instead coffeescript or Grunt.
+
+If Jason and co are activating themselves in flexnav development I will do a lot of pull requests. But for now, this is will remain as my own version of flexnav.
+
+### Extra features over the original
+
+- Made to use with WordPress (`wp_nav_menu`, preferably with `walker`)
+- Animations (requires [jquery.easing](https://github.com/gdsmith/jquery.easing), not currently included):
+
+```js
+$(".flexnav").flexNav({
+  'animationOpenSpeed': 500,            // default for drop down animation speed on open
+  'animationCloseSpeed': 500,            // default for drop down animation speed on close
+  'animationOpenEffect': 'swing',        // default animation effect on open (requires jquery.easing!)
+  'animationCloseEffect': 'swing',       // default animation effect on close (requires jquery.easing!)   
+});
+```
+
+- Bugfix: `touchend` event for tablets
+- Bugfix: funny behavior after window resize due to faulty menu reset
 
 ### A Device Agnostic Approach to Complex Site Navigation with Support for Touch and Keyboard Accessibility
 
@@ -88,6 +107,7 @@ $(".flexnav").flexNav({
 
 * * *
 ### Contributors
+* [Roni Laukkarinen](http://rolle.io)
 * [Jason Weaver](http://jasonweaver.name) - (Primary)
 * [James Sinclair](https://github.com/jrsinclair)
 * [Allison Wagner](https://github.com/alliwagner)
