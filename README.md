@@ -73,7 +73,10 @@ Initialize
 ### Options
 ```js
 $(".flexnav").flexNav({
-  'animationSpeed':     250,            // default for drop down animation speed
+  'animationOpenSpeed': 500,            // default for drop down animation speed on open
+  'animationCloseSpeed': 500,            // default for drop down animation speed on close
+  'animationOpenEffect': 'swing',        // default animation effect on open (requires jquery.easing!)
+  'animationCloseEffect': 'swing',       // default animation effect on close (requires jquery.easing!)
   'transitionOpacity':  true,           // default for opacity animation
   'buttonSelector':     '.menu-button', // default menu button class name
   'hoverIntent':        false,          // Change to true for use with hoverIntent plugin
