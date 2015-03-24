@@ -9,6 +9,9 @@
         "grunt-contrib-sass": "latest",
         "grunt-coffeelint": "latest",
         "grunt-contrib-uglify": "latest",
-        "grunt-contrib-watch": "latest"
+        "grunt-contrib-watch": "latest",
+        "gulp-concat": "latest",
+        "gulp-uglify": "latest",
+        "gulp": "latest"
     }
 }
