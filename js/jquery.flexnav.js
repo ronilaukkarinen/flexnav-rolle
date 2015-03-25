@@ -128,10 +128,16 @@
         $(this).parent('.item-with-ul').siblings().find('ul.menu-show').removeClass('menu-show').hide();
       }
       if ($sub.hasClass('menu-show') === true) {
-        $sub.removeClass('menu-show').slideUp(settings.animationSpeed);
+        $sub.removeClass('menu-show').stop(true, true).animate({
+            height: ["toggle", settings.animationCloseEffect],
+            opacity: "toggle"
+          }, settings.animationCloseSpeed);
         return $touchButton.removeClass('active');
       } else if ($sub.hasClass('menu-show') === false) {
-        $sub.addClass('menu-show').slideDown(settings.animationSpeed);
+        $sub.addClass('menu-show').stop(true, true).animate({
+            height: ["toggle", settings.animationOpenEffect],
+            opacity: "toggle"
+          }, settings.animationOpenSpeed);
         return $touchButton.addClass('active');
       }
     });
